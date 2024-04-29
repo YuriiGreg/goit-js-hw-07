@@ -8,7 +8,10 @@ function getRandomHexColor() {
   const boxesDiv = document.querySelector('#boxes');
 
 
- function createBoxes(amount) {
+function createBoxes(amount) {
+   
+  destroyBoxes();
+
   const boxes = [];
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
